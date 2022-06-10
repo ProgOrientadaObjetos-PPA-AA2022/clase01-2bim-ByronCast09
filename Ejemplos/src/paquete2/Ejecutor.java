@@ -41,8 +41,7 @@ public class Ejecutor {
         
         // Imprimir el costo de los bienes inmuebles de la empresa
         //System.out.printf("%.2f\n",emp.obtenerBienesInmuebles());
-        System.out.printf("%s\n",emp);
-        
+       
         Vehiculo vh1 = new Vehiculo("Auto","LBB0011",10000);
         Vehiculo vh2 = new Vehiculo("Camioneta","LCB0011",20000);
         Vehiculo vh3 = new Vehiculo("Auto","LBD0012",6000);
@@ -50,5 +49,9 @@ public class Ejecutor {
         Vehiculo vh5 = new Vehiculo("Camioneta","LCC0011",25000);
         
         Vehiculo [] vehiculo = {vh1,vh2,vh3,vh4,vh5};
+        emp.establecerVehiculo(vehiculo);
+        emp.establecerCostoVehiculos();
+        emp.establecerTotalBienes();
+        System.out.printf("%s\n",emp);
     }
 }
